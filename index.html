@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ringo Shop</title>
+    <link rel="icon" href="image/music-store.png" type="image/x-icon">
+    <style>
+        .item-H {
+            grid-area: header;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .item-L {
+            grid-area: lside;
+            height: 825px;
+            align-items: center;
+            justify-content: center;
+        }
+        .item-M {
+            grid-area: main;
+            height: 825px;
+        }
+        .item-F {
+            grid-area: footer;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gridcontainer {
+            display: grid;
+            grid-template-areas:
+            'header header header header header'
+            'lside main main main main'
+            'footer footer footer footer footer';
+            grid-gap: 5px;
+            padding: 10px;
+        }
+        .item-TS {
+            background-color:#ba1e18;
+            border: 2px solid #da212a; 
+            padding: 30px; 
+            font-size: 20px;
+            text-align: center; 
+        }
+        .item-SC {
+            background-color: #fff8b1;
+            border: 2px solid #da212a; 
+            padding: 30px; 
+            font-size: 20px;
+            text-align: center; 
+        }
+    </style>
+    <link rel="stylesheet" href="button.css">
+</head>
+<body style="background-color: #da212a;">
+    <div class="gridcontainer">
+        <div class="item-H item-TS">
+            <img src="image/Header.png" alt="Header">
+        </div>
+        <div class="item-L item-SC">
+            <p style="font-size: 30px; color: #764b36;"><b>เมนู</b></p>
+            <a href="register.html">
+                <button style="margin: auto;">
+                    <span>สมัครสมาชิก</span>
+                </button>
+            </a>
+        </div>
+        <div class="item-M item-SC">
+            <p style="font-size: 30px; color: #764b36;"><b>รายการสินค้า</b></p>
+            <form action="https://httpbin.org/post" method="post">
+                <table style="display: flex; align-items: center; justify-content: center;">
+                    <tr style="color: #764b36; font-size: 25px;">
+                        <th>
+                            REDTV CD
+                        </th>
+                        <th>
+                            1989TV CD
+                        </th>
+                        <th>
+                            TTPD CD
+                        </th>
+                    </tr>
+                    <tr>
+                        <th style="height: 250px;"><img src="image/REDTV.webp" style="height: 240px;"></th>
+                        <th style="height: 250px;"><img src="image/1989TV.webp" style="height: 180px;"></th>
+                        <th style="height: 250px;"><img src="image/TTPD.webp" style="height: 180px;"></th>
+                    </tr>
+                    <tr style="color: #764b36;">
+                        <th>
+                            <label for="amountcd" style="font-size: 25px;">จำนวน:</label>
+                            <select id="amountcd" name="amount" required style=" font-size: 20px;">
+                                <option value="0 cd">ไม่รับสินค้า</option>
+                                <option value="1 cd">1 ชิ้น</option>
+                                <option value="2 cds">2 ชิ้น</option>
+                                <option value="3 cds">3 ชิ้น</option>
+                                <option value="4+ cds">4 ชิ้นขึ้นไป</option>
+                            </select>
+                        </th>
+                        <th>
+                            <label for="amountcd" style="font-size: 25px;">จำนวน:</label>
+                            <select id="amountcd" name="amount" required style="font-size: 20px;">
+                                <option value="0 cd">ไม่รับสินค้า</option>
+                                <option value="1 cd">1 ชิ้น</option>
+                                <option value="2 cds">2 ชิ้น</option>
+                                <option value="3 cds">3 ชิ้น</option>
+                                <option value="4+ cds">4 ชิ้นขึ้นไป</option>
+                            </select>
+                        </th>
+                        <th>
+                            <label for="amountcd" style="font-size: 25px;">จำนวน:</label>
+                            <select id="amountcd" name="amount" required style=" font-size: 20px;">
+                                <option value="0 cd">ไม่รับสินค้า</option>
+                                <option value="1 cd">1 ชิ้น</option>
+                                <option value="2 cds">2 ชิ้น</option>
+                                <option value="3 cds">3 ชิ้น</option>
+                                <option value="4+ cds">4 ชิ้นขึ้นไป</option>
+                            </select>
+                        </th>
+                    </tr>
+                </table>
+                <br>
+                <table style="display: flex; align-items: center; justify-content: center;">
+                    <tr style="color: #764b36; font-size: 25px;">
+                        <th>
+                            Sweater
+                        </th>
+                        <th>
+                            Jacket
+                        </th>
+                        <th>
+                            Hoodies
+                        </th>
+                    </tr>
+                    <tr>
+                        <th style="height: 250px;"><img src="image/Sweater.jpg" style="height: 190px;"></th>
+                        <th style="height: 250px;"><img src="image/Jacket.webp" style="height: 180px;"></th>
+                        <th style="height: 250px;"><img src="image/Hoodie.jpg" style="height: 170px;"></th>
+                    </tr>
+                    <tr style="color: #764b36;">
+                        <th>
+                            <label for="amountsweater" style="font-size: 25px;">จำนวน:</label>
+                            <select id="amountsweater" name="amount" required style=" font-size: 20px;">
+                                <option value="0 sweater">ไม่รับสินค้า</option>
+                                <option value="1 sweater">1 ชิ้น</option>
+                                <option value="2 sweaters">2 ชิ้น</option>
+                                <option value="3 sweaters">3 ชิ้น</option>
+                                <option value="4+ sweaters">4 ชิ้นขึ้นไป</option>
+                            </select>
+                        </th>
+                        <th>
+                            <label for="amountjacket" style="font-size: 25px;">จำนวน:</label>
+                            <select id="amountjacket" name="amount" required style=" font-size: 20px;">
+                                <option value="0 jacket">ไม่รับสินค้า</option>
+                                <option value="1 jacket">1 ชิ้น</option>
+                                <option value="2 jackets">2 ชิ้น</option>
+                                <option value="3 jackets">3 ชิ้น</option>
+                                <option value="4+ jackets">4 ชิ้นขึ้นไป</option>
+                            </select>
+                        </th>
+                        <th>
+                            <label for="amounthoodies" style=" font-size: 25px;">จำนวน:</label>
+                            <select id="amounthoodies" name="amount" required style=" font-size: 20px;">
+                                <option value="0 hoodie">ไม่รับสินค้า</option>
+                                <option value="1 hoodie">1 ชิ้น</option>
+                                <option value="2 hoodies">2 ชิ้น</option>
+                                <option value="3 hoodies">3 ชิ้น</option>
+                                <option value="4+ hoodies">4 ชิ้นขึ้นไป</option>
+                            </select>
+                        </th>
+                    </tr>
+                </table>
+                <br>
+                <input type="submit" value="ยืนยันคำสั่งซื้อ" style="font-size: 20px; color: #764b36;">
+            </form>
+        </div>
+        <div class="item-F item-TS">
+            <address style="color: #764b36; font-size: 25px;">
+                <b>1989 ถนนพญาไท แขวงวังใหม่ เขตปทุมวัน กรุงเทพมหานคร 10330</b><br>
+                <b>IG : Ringo_TSshop Tel : 099-013-1989</b>
+            </address>
+        </div>
+    </div>
+</body>
+</html>
